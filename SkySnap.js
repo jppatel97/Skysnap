@@ -1,6 +1,6 @@
 
-const WEATHER_API_KEY = '4a451e966ad999cb948752e338a9dc2f';
-const AQI_API_KEY = 'e4fc69bf0b528257216080e10a5fba103b0231b7';
+const WEATHER_API_KEY 'OPENWETHER_API';
+const AQI_API_KEY = 'AQI_API';
 const WEATHER_BASE_URL = 'https://api.openweathermap.org/data/2.5';
 const AQI_BASE_URL = 'https://api.waqi.info/feed';
 
