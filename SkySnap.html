@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkySnap Weather</title>
+    <link rel="stylesheet" href="SkySnap.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        <header class="header">
+            <div class="logo-section">
+                <i class="fa-solid fa-cloud"></i>
+                <span>SkySnap</span>
+            </div>
+            <div class="search-section">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="search-input" placeholder="Search location...">
+                </div>
+            </div>
+            <button class="location-btn">
+                <i class="fas fa-location-dot"></i>
+                Current Location
+            </button>
+        </header>
+
+        <div class="weather-grid">
+           
+            <div class="left-column">
+                <
+                <div class="weather-card">
+                    <h2>Now</h2>
+                    <div class="temp-display">
+                        <span id="current-temp">--</span>°<span class="temp-unit">c</span>
+                    </div>
+                    <div class="weather-icon" id="current-weather-icon">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <div id="weather-condition">Clear Sky</div>
+                    <div class="date-location">
+                        <div id="current-date">Wednesday 1, Mar</div>
+                        <div id="location">Chandpur, BD</div>
+                    </div>
+                </div>
+
+               
+                <div class="forecast-section">
+                    <h3>5 Days Forecast</h3>
+                    <div class="forecast-list" id="forecast-container">
+                        
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="right-column">
+                <h2>Today's Highlights</h2>
+                
+                
+                <div class="highlights-grid">
+                    <div class="highlight-card air-quality">
+                        <div class="card-header">
+                            <h3>Air Quality Index</h3>
+                            <span class="aqi-status" id="aqi-status">Very Poor</span>
+                        </div>
+                        <div class="aqi-grid">
+                            <div class="aqi-item">
+                                <span class="label">PM2.5</span>
+                                <span class="value" id="pm25">--</span>
+                            </div>
+                            <div class="aqi-item">
+                                <span class="label">SO2</span>
+                                <span class="value" id="so2">--</span>
+                            </div>
+                            <div class="aqi-item">
+                                <span class="label">NO2</span>
+                                <span class="value" id="no2">--</span>
+                            </div>
+                            <div class="aqi-item">
+                                <span class="label">O3</span>
+                                <span class="value" id="o3">--</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="highlight-card sun-times">
+                        <h3>Sunrise & Sunset</h3>
+                        <div class="sun-grid">
+                            <div class="sun-item">
+                                <i class="fas fa-sun"></i>
+                                <span id="sunrise-time">6:19 AM</span>
+                            </div>
+                            <div class="sun-item">
+                                <i class="fas fa-moon"></i>
+                                <span id="sunset-time">6:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="weather-details-grid">
+                        <div class="detail-card">
+                            <i class="fas fa-droplet"></i>
+                            <div class="detail-info">
+                                <span class="label">Humidity</span>
+                                <span class="value"><span id="humidity">42</span>%</span>
+                            </div>
+                        </div>
+                        <div class="detail-card">
+                            <i class="fas fa-wind"></i>
+                            <div class="detail-info">
+                                <span class="label">Pressure</span>
+                                <span class="value"><span id="pressure">1016</span>hPa</span>
+                            </div>
+                        </div>
+                        <div class="detail-card">
+                            <i class="fas fa-eye"></i>
+                            <div class="detail-info">
+                                <span class="label">Visibility</span>
+                                <span class="value"><span id="visibility">10</span>km</span>
+                            </div>
+                        </div>
+                        <div class="detail-card">
+                            <i class="fas fa-temperature-half"></i>
+                            <div class="detail-info">
+                                <span class="label">Feels Like</span>
+                                <span class="value"><span id="feels-like">21</span>°c</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="hourly-section">
+                    <h3>Today at</h3>
+                    <div class="hourly-grid" id="hourly-container">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="SkySnap.js"></script>
+</body>
+</html>
